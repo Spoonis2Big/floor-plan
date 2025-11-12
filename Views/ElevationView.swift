@@ -101,7 +101,6 @@ struct ElevationWallView: View {
         // Project wall position onto elevation plane
         // For simplicity, use the midpoint of the wall
         let midX = (wall.startPoint.x + wall.endPoint.x) / 2
-        let midY = (wall.startPoint.y + wall.endPoint.y) / 2
 
         // Map to canvas coordinates (this is a simplified projection)
         return CGPoint(

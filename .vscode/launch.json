@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:floor-plan}",
+            "name": "Debug FloorPlan",
+            "target": "FloorPlan",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug FloorPlan"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:floor-plan}",
+            "name": "Release FloorPlan",
+            "target": "FloorPlan",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release FloorPlan"
+        }
+    ]
+}
