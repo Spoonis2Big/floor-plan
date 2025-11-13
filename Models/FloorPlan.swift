@@ -63,6 +63,12 @@ class FloorPlan: ObservableObject, Codable {
         walls.removeAll { $0.id == wall.id }
     }
 
+    func updateWall(_ wall: Wall) {
+        if let index = walls.firstIndex(where: { $0.id == wall.id }) {
+            walls[index] = wall
+        }
+    }
+
     func clearAll() {
         walls.removeAll()
     }
